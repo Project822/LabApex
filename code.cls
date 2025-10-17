@@ -18,36 +18,6 @@ public interface IUsable
     void Use(Player player);
 }
  
- 
-public abstract class GameObject
-{
-    public string Name { get; protected set; }
- 
-    public GameObject(string name)
-    {
-        Name = name;
-    }
- 
-    public abstract void ShowInfo();
-}
- 
- //Дополнительный функционал
- public class GameNotification : Exception
-{
-    public override string Message => "Объявление!";
-}
- 
-//исключения
-public class GameException : Exception
-{
-    public override string Message => "Произошла игровая ошибка!";
-}
- 
-public class NoAmmoException : GameException
-{
-    public override string Message => "Оружие не имеет патронов!";
-}
- 
 public class InvalidAbilityException : GameException
 {
     public override string Message => "Неверная способность легенды!";
