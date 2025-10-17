@@ -31,7 +31,7 @@ public abstract class GameObject
     public abstract void ShowInfo();
 }
  
- //Дополнительный функционал
+ //Дополнительный функционал - объявления
  public class GameNotification : Exception
 {
     public override string Message => "Объявление!";
